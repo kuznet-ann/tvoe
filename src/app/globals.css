@@ -81,3 +81,7 @@ a {
     max-width: 1792px;
     width: 100%;
 }
+
+.container-fluid {
+    margin-left: 64px;
+}

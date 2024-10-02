@@ -37,21 +37,6 @@ export default function RootLayout({
 			<body className={`${robotoRegular.variable} ${robotoMedium.variable} ${robotoBold.variable}`}>
 				<Menu />
 				{children}
-
-				{/* <Routes>
-					<Route
-						path='/'
-						element={<Home />}
-					/>
-					<Route
-						path='/cart'
-						element={<Cart />}
-					/>
-					<Route
-						path='*'
-						element={<NotFound />}
-					/>
-				</Routes> */}
 			</body>
 		</html>
 	);
