@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function NewLItem({ data }) {
     return (
-        <li>
+        <li className={style.item}>
             <div className={style.wrapper}>
                 <p className={style.rating}>{(String(data.rating)).replace(".", ",")}</p>
                 {data.new ? <p className={style.new}>Новый сезон</p> : ''}

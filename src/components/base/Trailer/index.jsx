@@ -118,10 +118,10 @@ const trailers = [
     },
 ];
 
-export function Trailer() {
+export default function Trailer() {
     const par = useSearchParams();
     return (
-        <div className='container-fluid'>
+        <section className='container-fluid'>
             <div className={style.info}>
                 <Image
                     src={nameAvatarTheLastAirbender}
@@ -148,6 +148,6 @@ export function Trailer() {
                 src={bannerAvatarTheLastAirbender}
                 alt=''
             />
-        </div>
+        </section>
     );
 }

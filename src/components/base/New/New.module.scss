@@ -11,6 +11,13 @@
     gap: 20px;
 }
 
+.item {
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
 .wrapper {
     position: relative;
     width: 280px;

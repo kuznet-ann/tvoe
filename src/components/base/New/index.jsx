@@ -7,9 +7,9 @@ import NewList from '../../ui/NewList'
 
 export default function New() {
     return (
-        <div className='container-fluid'>
+        <section className='container-fluid'>
             <h3 className={style.title}>Новинки</h3>
             <NewList data={newFilms} />
-        </div>
+        </section>
     )
 }

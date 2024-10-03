@@ -43,6 +43,14 @@
     position: relative;
     width: 256px;
     border-radius: 16px;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
+    &:hover::before {
+        cursor: pointer;
+        opacity: 0.3;
+    }
     &::before {
         z-index: 0;
         content: '';
@@ -56,10 +64,6 @@
     }
     &:first-child::before {
         opacity: 0.2;
-    }
-    &:hover::before {
-        cursor: pointer;
-        opacity: 0.3;
     }
 }
 
