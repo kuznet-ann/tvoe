@@ -8,7 +8,7 @@ export default function TrailerList({ trailers }) {
     return (
         <ul className={style.trailers}>
             {trailers.map((el, i) =>
-                <TrailerItem id={i + 1} image={el.img_cover} progress={el.progress} />
+                <TrailerItem key={i} id={i + 1} image={el.img_cover} progress={el.progress} />
             )}
         </ul>
     )

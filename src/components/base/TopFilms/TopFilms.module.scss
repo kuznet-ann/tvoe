@@ -1,0 +1,42 @@
+.title {
+    margin-top: 80px;
+    width: 250px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+    background-image: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.item {
+    position: relative;
+    &:last-child {
+        .cover {
+            margin-left: 233px;
+        }
+    }
+}
+
+.place {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: 142px;
+    z-index: -1;
+}
+
+.cover {
+    margin-left: 100px;
+}

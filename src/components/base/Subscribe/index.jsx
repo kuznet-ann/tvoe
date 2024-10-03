@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-import style from './Premier.module.scss';
+import style from './Subscribe.module.scss';
 
 import film from '../../../app/images/icons/film.svg';
 import phone from '../../../app/images/icons/phone.svg';
 import star from '../../../app/images/icons/star.svg';
 import like from '../../../app/images/icons/like.svg';
-import premiers from '../../../app/images/premier_img.png';
+import subscribe from '../../../app/images/subscribe_img.png';
 
 export default function index() {
     return (
@@ -49,7 +49,7 @@ export default function index() {
                     <span className={style.text}>далее от 166 ₽/мес</span>
                 </div>
                 <Image className={style.img}
-                    src={premiers}
+                    src={subscribe}
                     alt=''
                 />
             </div>
