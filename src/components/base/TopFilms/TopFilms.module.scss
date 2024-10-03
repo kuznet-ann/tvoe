@@ -1,5 +1,11 @@
-.title {
+.wrapper {
+    position: relative;
+    height: 504px;
     margin-top: 80px;
+    overflow: hidden;
+}
+
+.title {
     width: 250px;
     font-size: 28px;
     font-weight: 700;
@@ -13,14 +19,32 @@
 }
 
 .list {
-    margin-top: 20px;
-    display: flex;
     list-style: none;
-    gap: 20px;
+
+    position: absolute;
+    display: block;
+    top: 55px;
+    left: 0;
+    width: 450px;
+    height: 95vw;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-450px);
+    transform-origin: right top;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .item {
     position: relative;
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+
     &:last-child {
         .cover {
             margin-left: 233px;
@@ -39,4 +63,6 @@
 
 .cover {
     margin-left: 100px;
+    &:hover {
+    }
 }

@@ -9,18 +9,17 @@ export default function NewLItem({ data }) {
     return (
         <li className={style.item}>
             <div className={style.wrapper}>
-                <p className={style.rating}>{(String(data.rating)).replace(".", ",")}</p>
+                <p className={style.rating}>{String(data.rating).replace('.', ',')}</p>
                 {data.new ? <p className={style.new}>Новый сезон</p> : ''}
-                <Image
-                    className={style.img}
-                    src={data.img_cover}
-                    alt=''
-                    width={280}
-                    height={425}
-                />
+                <Image className={style.img} src={data.img_cover} alt='' width={280} height={425} />
             </div>
-            <h4 className={style.subtitle}>{data.name.substring(0, 27)}{data.name.length >= 27 && '...'}</h4>
-            <p className={style.info}>{data.year}, {data.duration}</p>
+            <h4 className={style.subtitle}>
+                {data.name.substring(0, 27)}
+                {data.name.length >= 27 && '...'}
+            </h4>
+            <p className={style.info}>
+                {data.year}, {data.duration}
+            </p>
         </li>
     );
 }

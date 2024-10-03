@@ -16,31 +16,19 @@ export default function index() {
                 <h1 className={style.title}>Смотри мировые премьеры</h1>
                 <ul className={style.list}>
                     <li className={style.item}>
-                        <Image
-                            src={film}
-                            alt=''
-                        />
+                        <Image src={film} alt='' />
                         Новинки каждую неделю
                     </li>
                     <li className={style.item}>
-                        <Image
-                            src={phone}
-                            alt=''
-                        />
+                        <Image src={phone} alt='' />
                         На любом устройстве
                     </li>
                     <li className={style.item}>
-                        <Image
-                            src={star}
-                            alt=''
-                        />
+                        <Image src={star} alt='' />
                         Без рекламы и доплат
                     </li>
                     <li className={style.item}>
-                        <Image
-                            src={like}
-                            alt=''
-                        />
+                        <Image src={like} alt='' />
                         Эксклюзивная озвучка
                     </li>
                 </ul>
@@ -48,10 +36,7 @@ export default function index() {
                     <button className={`primary ${style.btn}`}>Попробовать бесплатно</button>
                     <span className={style.text}>далее от 166 ₽/мес</span>
                 </div>
-                <Image className={style.img}
-                    src={subscribe}
-                    alt=''
-                />
+                <Image className={style.img} src={subscribe} alt='' />
             </div>
         </section>
     );
