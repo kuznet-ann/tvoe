@@ -1,0 +1,24 @@
+.card {
+    margin-top: 80px;
+    padding: 40px 58px;
+    background: #0d0d10;
+    border: rgba(#fff, 0.1) solid 1px;
+    border-radius: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.text {
+    text-transform: uppercase;
+    font-size: 16px;
+}

@@ -14,25 +14,6 @@
     text-transform: uppercase;
 }
 
-.list {
-    margin-top: 32px;
-    width: 820px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 16px;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.item {
-    width: 394px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .wrapper {
     margin-top: 52px;
     width: 409px;
