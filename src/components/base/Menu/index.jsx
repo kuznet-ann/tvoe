@@ -12,7 +12,7 @@ import Search from '../../../app/images/icons/search.svg';
 import Install from '../../../app/images/icons/install.svg';
 import Promocode from '../../../app/images/icons/promocodes.svg';
 
-export function Menu() {
+export default function Menu() {
     const pathname = usePathname();
     return (
         <header className={style.menu}>

@@ -1,0 +1,46 @@
+.section {
+    padding-top: 230px;
+    box-sizing: border-box;
+    height: 594px;
+}
+
+.info {
+    margin-top: 12px;
+    width: 800px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.descr {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+.black {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    z-index: -1;
+}
+
+.banner {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}

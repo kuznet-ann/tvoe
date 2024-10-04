@@ -1,0 +1,32 @@
+.list {
+    margin-top: 16px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.rating {
+    padding: 4px 12px;
+    height: 30px;
+    background: rgba(#fff, 0.1);
+    border-radius: 8px;
+}
+
+.premiere {
+    padding: 5px 12px;
+    height: 30px;
+    background: rgba(#fff, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: rgba(#fff, 0.3);
+    border-radius: 4px;
+}

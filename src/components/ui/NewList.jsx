@@ -10,7 +10,6 @@ import jokerFolieADeux from '/src/app/images/films/joker-folie-a-deux/cover.png'
 import aGoodGirlsGuideToMurder from '/src/app/images/films/a-good-girls-guide-to-murder/cover.png';
 import theHollow from '/src/app/images/films/the-hollow/cover.png';
 import despicableMe4 from '/src/app/images/films/despicable-me-4/cover.png';
-import avatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/cover.png';
 
 export default function NewList({ data }) {
     data[0].img_cover = mufasaTheLionKing.src;
@@ -20,7 +19,6 @@ export default function NewList({ data }) {
     data[4].img_cover = aGoodGirlsGuideToMurder.src;
     data[5].img_cover = theHollow.src;
     data[6].img_cover = despicableMe4.src;
-    data[7].img_cover = avatarTheLastAirbender.src;
     return (
         <ul className={style.list}>
             {data.map((el, i) =>

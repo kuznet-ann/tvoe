@@ -17,19 +17,19 @@ export default function index() {
             <div className={style.wrapper}>
                 <button>Написать в поддержку</button>
                 <div className={style.social}>
-                    <Link className={style.link} href='#'>
+                    <Link className={style.link} href='https://telegram.org/'>
                         Telegram
                         <Image src={telegram} alt='' />
                     </Link>
-                    <Link className={style.link} href='#'>
+                    <Link className={style.link} href='https://vk.com/'>
                         ВКонтакте
                         <Image src={vk} alt='' />
                     </Link>
-                    <Link className={style.link} href='#'>
+                    <Link className={style.link} href='https://youtube.com/'>
                         Youtube
                         <Image src={youtube} alt='' />
                     </Link>
-                    <Link className={style.link} href='#'>
+                    <Link className={style.link} href='https://www.tiktok.com/'>
                         TikTok
                         <Image src={tiktok} alt='' />
                     </Link>
@@ -37,9 +37,9 @@ export default function index() {
             </div>
             <div className={`${style.wrapper} ${style.line}`}>
                 <nav className={style.navigation}>
-                    <Link href='#'>Главная</Link>
+                    <Link href='/'>Главная</Link>
                     <Link href='#'>Фильмы</Link>
-                    <Link href='#'>Сериалы</Link>
+                    <Link href='/serials'>Сериалы</Link>
                     <Link href='#'>ТВ</Link>
                     <Link href='#'>Контакты</Link>
                 </nav>

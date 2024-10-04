@@ -1,11 +1,12 @@
 'use client';
 import React from 'react';
 import { useSearchParams } from 'next/navigation';
-import { useRouter } from 'next/router';
 import style from './Trailer.module.scss';
 
 import TrailerList from '../../ui/TrailerList';
+import NameImg from '../../ui/NameImg';
 
+import black from '../../../app/images/blacking.png'
 import nameAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/name.png';
 import bannerAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/banner.png';
 import coverAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/cover.png';
@@ -26,6 +27,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: coverAvatarTheLastAirbender.src,
         progress: '69%',
+        premiere: false,
         rating: 7.9,
         year: '2024',
         genre: 'Фентези',
@@ -38,6 +40,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: focus.src,
         progress: '0%',
+        premiere: false,
         rating: 8.9,
         year: '2024',
         genre: 'Фентези',
@@ -50,6 +53,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: instantFamily.src,
         progress: '0%',
+        premiere: false,
         rating: 8.4,
         year: '2024',
         genre: 'Фентези',
@@ -62,6 +66,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: thisMeansWar.src,
         progress: '0%',
+        premiere: false,
         rating: 8.3,
         year: '2024',
         genre: 'Фентези',
@@ -74,6 +79,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: revengeOfTheBridesmaids.src,
         progress: '0%',
+        premiere: false,
         rating: 7.9,
         year: '2024',
         genre: 'Фентези',
@@ -86,6 +92,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: whileYouWereSleeping.src,
         progress: '0%',
+        premiere: false,
         rating: 9.1,
         year: '2024',
         genre: 'Фентези',
@@ -98,6 +105,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: getOnUp.src,
         progress: '0%',
+        premiere: false,
         rating: 7.4,
         year: '2024',
         genre: 'Фентези',
@@ -110,6 +118,7 @@ const trailers = [
         img_banner: bannerAvatarTheLastAirbender.src,
         img_cover: stragerThings.src,
         progress: '0%',
+        premiere: false,
         rating: 8.0,
         year: '2024',
         genre: 'Фентези',
@@ -121,33 +130,13 @@ const trailers = [
 export default function Trailer() {
     const par = useSearchParams();
     return (
-        <section className='container-fluid'>
-            <div className={style.info}>
-                <Image
-                    src={nameAvatarTheLastAirbender}
-                    alt=''
-                    width={338}
-                />
-                <ul className={style.list}>
-                    <li className={style.rating}>7,9</li>
-                    <li className={style.dot}></li>
-                    <li>2024</li>
-                    <li className={style.dot}></li>
-                    <li>Фентези</li>
-                    <li className={style.dot}></li>
-                    <li>Фентези</li>
-                    <li className={style.dot}></li>
-                    <li>16+</li>
-                </ul>
-            </div>
+        <section className={`container-fluid ${style.section}`}>
+            <NameImg data={trailers} />
             <div className={style.wrapper}>
                 <TrailerList trailers={trailers} />
             </div>
-            <Image
-                className={style.banner}
-                src={bannerAvatarTheLastAirbender}
-                alt=''
-            />
+            <Image className={style.black} src={black} alt='Баннер' />
+            <Image className={style.banner} src={bannerAvatarTheLastAirbender} alt='Баннер' />
         </section>
     );
 }
