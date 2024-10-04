@@ -37,7 +37,7 @@ export default function Menu() {
                             <li
                                 className={`${style.item} ${pathname === '/serials' ? style.active : ''
                                     }`}>
-                                <Link href='/serials'>Сериалы</Link>
+                                <Link href='#'>Сериалы</Link>
                             </li>
                             <li
                                 className={`${style.item} ${pathname === '/tv' ? style.active : ''

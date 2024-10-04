@@ -6,7 +6,7 @@ import style from './Trailer.module.scss';
 import TrailerList from '../../ui/TrailerList';
 import NameImg from '../../ui/NameImg';
 
-import black from '../../../app/images/blacking.png'
+import black from '../../../app/images/blacking.png';
 import nameAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/name.png';
 import bannerAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/banner.png';
 import coverAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/cover.png';
@@ -28,6 +28,7 @@ const trailers = [
         img_cover: coverAvatarTheLastAirbender.src,
         progress: '69%',
         premiere: false,
+        link: '/serial-description',
         rating: 7.9,
         year: '2024',
         genre: 'Фентези',
@@ -41,6 +42,7 @@ const trailers = [
         img_cover: focus.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 8.9,
         year: '2024',
         genre: 'Фентези',
@@ -54,6 +56,7 @@ const trailers = [
         img_cover: instantFamily.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 8.4,
         year: '2024',
         genre: 'Фентези',
@@ -67,6 +70,7 @@ const trailers = [
         img_cover: thisMeansWar.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 8.3,
         year: '2024',
         genre: 'Фентези',
@@ -80,6 +84,7 @@ const trailers = [
         img_cover: revengeOfTheBridesmaids.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 7.9,
         year: '2024',
         genre: 'Фентези',
@@ -93,6 +98,7 @@ const trailers = [
         img_cover: whileYouWereSleeping.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 9.1,
         year: '2024',
         genre: 'Фентези',
@@ -106,6 +112,7 @@ const trailers = [
         img_cover: getOnUp.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 7.4,
         year: '2024',
         genre: 'Фентези',
@@ -119,6 +126,7 @@ const trailers = [
         img_cover: stragerThings.src,
         progress: '0%',
         premiere: false,
+        link: '/serial-description',
         rating: 8.0,
         year: '2024',
         genre: 'Фентези',
@@ -136,7 +144,19 @@ export default function Trailer() {
                 <TrailerList trailers={trailers} />
             </div>
             <Image className={style.black} src={black} alt='Баннер' />
-            <Image className={style.banner} src={bannerAvatarTheLastAirbender} alt='Баннер' />
+            {trailers.map((el, i) =>
+                el.id === 1 ? (
+                    <Image
+                        className={style.banner}
+                        src={el.img_banner}
+                        alt='Баннер'
+                        width={1920}
+                        height={744}
+                    />
+                ) : (
+                    ''
+                ),
+            )}
         </section>
     );
 }

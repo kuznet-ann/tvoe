@@ -39,7 +39,7 @@ export default function index() {
                 <nav className={style.navigation}>
                     <Link href='/'>Главная</Link>
                     <Link href='#'>Фильмы</Link>
-                    <Link href='/serials'>Сериалы</Link>
+                    <Link href='#'>Сериалы</Link>
                     <Link href='#'>ТВ</Link>
                     <Link href='#'>Контакты</Link>
                 </nav>

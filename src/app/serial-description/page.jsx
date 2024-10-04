@@ -5,6 +5,7 @@ import bannerAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-
 import coverAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/cover.png';
 
 const filmInfo = [{
+    id: 1,
     name: 'Аватар: легенда об Аанге',
     img_name: nameAvatarTheLastAirbender.src,
     img_cover: coverAvatarTheLastAirbender.src,
