@@ -1,24 +1,25 @@
 import Image from 'next/image';
 import React from 'react';
 
-import style from '../base/Trailer/Trailer.module.scss';
+import style from './TrailerItem.module.scss';
 import Link from 'next/link';
 
-export default function HistoryItem({ id, image, link, progress }) {
-    // const imgPath = require(image);
+export default function Video({ image = '', link = '#', progress = '' }) {
     return (
-        <li>
-            <Link href={link} className={style.item}>
-                <Image
+        <li className={style.item} >
+            <Link
+                href={link}
+                className={style.link}>
+                <Image className={style.img}
                     src={image}
                     width={256}
                     height={144}
-                    alt=''
+                    alt='Обложка трейлера'
                 />
                 <div
                     className={style.line}
                     style={{ width: `${progress}` }}></div>
             </Link>
         </li>
-    )
+    );
 }

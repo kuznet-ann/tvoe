@@ -1,5 +1,8 @@
 import Banner from '../../components/base/Banner';
 import Promo from '../../components/base/Promo';
+import Seasons from '../../components/base/Seasons';
+import Info from '../../components/base/Info';
+import Reviews from '../../components/base/Reviews';
 
 import nameAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/name.png';
 import bannerAvatarTheLastAirbender from '/src/app/images/films/avatar-the-last-airbender/banner.png';
@@ -23,6 +26,8 @@ const filmInfo = [
             'Чтобы спасти мир от разрушительной войны, мальчик по имени Аанг должен справиться с четырьмя стихиями и вступить в схватку с безжалостным противником, который пытается его остановить.',
         description:
             '1980-е годы, тихий провинциальный американский городок. Благоприятное течение местной жизни нарушает загадочное исчезновение подростка по имени Уилл. Выяснить обстоятельства дела полны решимости родные мальчика и местный шериф, также события затрагивают лучшего друга Уилла — Майка. Он начинает собственное расследование. Майк уверен, что близок к разгадке, и теперь ему предстоит оказаться в эпицентре ожесточенной битвы потусторонних сил.',
+        about: 'Заглушка',
+        cast: 'Заглушка',
         review: [
             {
                 name: 'Марфа',
@@ -71,8 +76,15 @@ const filmInfo = [
 export default function Page() {
     return (
         <>
-            <Banner data={filmInfo} />
-            <Promo />
+            <div className="container">
+                <Banner data={filmInfo} />
+                <Promo />
+                <Seasons />
+                <Info data={filmInfo} />
+            </div>
+            <div className='container-fluid'>
+                <Reviews data={filmInfo[0].review} />
+            </div>
         </>
     );
 }

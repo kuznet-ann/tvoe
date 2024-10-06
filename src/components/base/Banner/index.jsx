@@ -12,7 +12,7 @@ import black from '/src/app/images/blacking.png';
 
 export default function index({ data }) {
     return (
-        <section className={`container ${style.section}`}>
+        <section className={style.section}>
             <NameImg data={data} imgWidth={454} />
 
             {data.map((el, i) => (
