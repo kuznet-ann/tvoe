@@ -35,9 +35,23 @@
 .list {
     display: none;
     margin-top: 20px;
+    padding-bottom: 4px;
+    overflow-x: scroll;
     gap: 20px;
     list-style: none;
     &.active {
         display: flex;
+    }
+    &::-webkit-scrollbar {
+        cursor: pointer;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(#fff, 0.3);
+        border-radius: 3px;
     }
 }

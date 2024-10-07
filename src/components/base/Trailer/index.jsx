@@ -143,15 +143,18 @@ export default function Trailer() {
             <div className={style.wrapper}>
                 <TrailerList trailers={trailers} />
             </div>
-            <Image className={style.black} src={black} alt='Баннер' />
+            <Image className={style.black} src={black} alt='Баннер' width={0}
+                height={0}
+                sizes='100vw' />
             {trailers.map((el, i) =>
                 el.id === 1 ? (
                     <Image
                         className={style.banner}
                         src={el.img_banner}
                         alt='Баннер'
-                        width={1920}
-                        height={744}
+                        width={0}
+                        height={0}
+                        sizes='100vw'
                     />
                 ) : (
                     ''

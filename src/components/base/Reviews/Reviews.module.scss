@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.right {
+.arrow {
     cursor: pointer;
     position: absolute;
     top: 105px;
@@ -27,9 +27,16 @@
     z-index: 5;
 }
 
-.list {
+.wrapper {
+    position: relative;
     margin-top: 12px;
+    overflow-x: hidden;
+}
+
+.list {
+    position: relative;
     display: flex;
     gap: 20px;
     list-style: none;
+    transition: all 0.3s;
 }

@@ -10,32 +10,27 @@
 
 .list {
     margin: 0;
+    padding-bottom: 4px;
     list-style: none;
     display: flex;
+    overflow-x: scroll;
     gap: 20px;
-
-    // position: absolute;
-    // display: block;
-    // top: 57px;
-    // left: 0;
-    // width: 487px;
-    // height: 95vw;
-    // overflow-y: auto;
-    // overflow-x: hidden;
-    // transform: rotate(-90deg) translateY(-487px);
-    // transform-origin: right top;
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
+    &::-webkit-scrollbar {
+        cursor: pointer;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(#fff, 0.2);
+        border-radius: 3px;
+    }
 }
 
 .item {
     display: block;
-    // width: 280px;
-    // height: 487px;
-
-    // border-radius: 20px;
-    // transform: rotate(90deg);
 }
 
 .wrapper {

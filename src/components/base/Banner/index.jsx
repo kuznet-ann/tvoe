@@ -45,7 +45,14 @@ export default function index({ data }) {
                 </div>
             </div>
 
-            <Image className={style.black} src={black} alt='Затемнение' width={1920} height={594} />
+            <Image
+                className={style.black}
+                src={black}
+                alt='Затемнение'
+                width={0}
+                height={0}
+                sizes='100vw'
+            />
             {data.map((el, i) =>
                 el.id === 1 ? (
                     <Image
@@ -53,8 +60,9 @@ export default function index({ data }) {
                         className={style.banner}
                         src={el.img_banner}
                         alt='Затемнение'
-                        width={1920}
-                        height={594}
+                        width={0}
+                        height={0}
+                        sizes='100vw'
                     />
                 ) : (
                     ''
