@@ -1,6 +1,5 @@
 .wrapper {
     position: relative;
-    height: 504px;
     margin-top: 80px;
     overflow: hidden;
 }
@@ -19,21 +18,22 @@
 }
 
 .list {
+    margin-top: 20px;
     list-style: none;
-
-    position: absolute;
-    display: block;
-    top: 55px;
-    left: 0;
-    width: 450px;
-    height: 95vw;
-    margin: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: rotate(-90deg) translateY(-450px);
-    transform-origin: right top;
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
     &::-webkit-scrollbar {
-        display: none;
+        cursor: pointer;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(#fff, 0.2);
+        border-radius: 3px;
     }
 }
 
@@ -42,7 +42,6 @@
     display: block;
     padding: 5px;
     border-radius: 20px;
-    transform: rotate(90deg);
     transition: transform 0.3s;
 
     &:last-child {
@@ -63,6 +62,55 @@
 
 .cover {
     margin-left: 100px;
-    &:hover {
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+    .list {
+        margin-top: 12px;
+    }
+    .item:last-child {
+        .place {
+            width: auto;
+            height: 128px;
+        }
+        .cover {
+            margin-left: 200px;
+        }
+    }
+    .place {
+        width: 110px;
+        height: auto;
+    }
+    .cover {
+        width: 230px;
+        height: auto;
+        margin-left: 94px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 22px;
+    }
+    .item:last-child {
+        .place {
+            width: 98px;
+            height: 57px;
+        }
+        .cover {
+            margin-left: 97px;
+        }
+    }
+    .place {
+        width: 44px;
+        height: 55px;
+    }
+    .cover {
+        width: 180px;
+        height: 270px;
+        margin-left: 44px;
     }
 }

@@ -8,15 +8,16 @@ import ShortInfo from '../ShortInfo';
 export default function index({ data, imgWidth = 338 }) {
     return data.map((el, i) =>
         el.id === 1 ? (
-            <div key={i}>
+            <div className={style.img} key={i}>
                 <Image
                     className={style.img}
                     src={el.img_name}
                     alt='Название текстом'
                     width={imgWidth}
                     height={0}
+                    sizes='100vw'
                 />
-                <ShortInfo el={el} width={imgWidth} />
+                <ShortInfo el={el} />
             </div>
         ) : (
             ''

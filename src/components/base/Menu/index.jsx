@@ -64,6 +64,13 @@ export default function Menu() {
                         />
                         Промокод
                     </button>
+
+                    <button className={`${style.btn} ${style.ins}`}>
+                        <Image className={style.install}
+                            src={Install}
+                            alt='Иконка установки'
+                        />
+                    </button>
                     <button className={style.btn}>
                         <Image
                             src={Search}

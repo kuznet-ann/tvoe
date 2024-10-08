@@ -12,8 +12,9 @@ export default function Video({ image = '', link = '#', progress = '' }) {
                 className={style.link}>
                 <Image className={style.img}
                     src={image}
-                    width={256}
-                    height={144}
+                    width={0}
+                    height={0}
+                    sizes='100vw'
                     alt='Обложка трейлера'
                 />
                 <div

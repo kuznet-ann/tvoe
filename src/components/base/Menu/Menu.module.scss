@@ -55,8 +55,19 @@
 }
 
 .btn {
+    min-width: 44px;
+    min-height: 44px;
     padding: 0;
     background: none;
+}
+
+.ins {
+    display: none;
+}
+
+.install {
+    margin-top: 4px;
+    opacity: 0.6;
 }
 
 .link {
@@ -64,5 +75,31 @@
     transition: color 0.3s;
     &:hover {
         color: var(--foreground);
+    }
+}
+
+@media (max-width: 1280px) {
+    .list {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .list {
+        display: none;
+    }
+    .buttons {
+        button {
+            display: none;
+        }
+        .btn {
+            display: block;
+        }
+    }
+    .ins {
+        display: block;
+    }
+    .link {
+        padding: 12px 16px;
     }
 }

@@ -8,7 +8,7 @@ import subscribe from '../../../app/images/subscribe_img.png';
 
 export default function index() {
     return (
-        <section className='container'>
+        <section>
             <div className={style.card}>
                 <h1 className={style.title}>Смотри мировые премьеры</h1>
                 <Advantages width={820} />

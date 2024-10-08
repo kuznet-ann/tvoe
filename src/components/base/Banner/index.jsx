@@ -13,7 +13,7 @@ import black from '/src/app/images/blacking.png';
 export default function index({ data }) {
     return (
         <section className={style.section}>
-            <NameImg data={data} imgWidth={454} />
+            <NameImg data={data} />
 
             {data.map((el, i) => (
                 <div className={style.info}>

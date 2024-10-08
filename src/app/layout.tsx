@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Menu from '../components/base/Menu';
+import PhoneMenu from '../components/ui/PhoneMenu';
 import Footer from '../components/base/Footer'
 
 const robotoRegular = localFont({
@@ -43,6 +44,7 @@ export default function RootLayout({
 		<html lang="ru">
 			<body className={`${robotoRegular.variable} ${robotoMedium.variable} ${robotoBold.variable} ${robotoBlack.variable}`}>
 				<Menu />
+				<PhoneMenu />
 				{children}
 				<Footer />
 			</body>

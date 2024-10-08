@@ -10,11 +10,12 @@ import youtube from '../../../app/images/social/youtube.svg';
 import tiktok from '../../../app/images/social/tiktok.svg';
 import rating from '../../../app/images/rating.png';
 import logo from '../../../app/images/logo.svg';
+import Promocode from '../../../app/images/icons/promocodes.svg';
 
 export default function index() {
     return (
         <footer className={`container ${style.footer}`}>
-            <div className={style.wrapper}>
+            <div className={`${style.wrapper} ${style.support}`}>
                 <button>Написать в поддержку</button>
                 <div className={style.social}>
                     <Link className={style.link} href='https://telegram.org/'>
@@ -36,13 +37,21 @@ export default function index() {
                 </div>
             </div>
             <div className={`${style.wrapper} ${style.line}`}>
-                <nav className={style.navigation}>
+                <nav className={`${style.navigation} ${style.menu}`}>
                     <Link href='/'>Главная</Link>
                     <Link href='#'>Фильмы</Link>
                     <Link href='#'>Сериалы</Link>
                     <Link href='#'>ТВ</Link>
                     <Link href='#'>Контакты</Link>
                 </nav>
+
+                <button className={style.promocode}>
+                    <Image
+                        src={Promocode}
+                        alt='Иконка промокода'
+                    />
+                    Промокод
+                </button>
                 <ul className={style.navigation}>
                     <li>
                         <Link href='#'>Реферальная программа</Link>

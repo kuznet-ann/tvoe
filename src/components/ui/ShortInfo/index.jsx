@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import style from './ShortInfo.module.scss'
+import style from './ShortInfo.module.scss';
 
 export default function shortInfo({ el, width }) {
     return (
-        <ul style={{ width: width }} className={style.list}>
+        <ul className={style.list}>
             <li className={style.rating}>{el.rating}</li>
             {el.premiere ? (
                 <>
@@ -23,5 +23,5 @@ export default function shortInfo({ el, width }) {
             <li className={style.dot}></li>
             <li>{el.age_limit}</li>
         </ul>
-    )
+    );
 }

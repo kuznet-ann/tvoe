@@ -83,5 +83,23 @@ a {
 }
 
 .container-fluid {
-    margin-left: 64px;
+    margin: 0 auto;
+    padding-left: 64px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+@media (max-width: 1820px) {
+    .container {
+        max-width: 1400px;
+    }
+    .container-fluid {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 20px;
+    }
 }

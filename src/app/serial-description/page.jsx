@@ -78,12 +78,12 @@ export default function Page() {
         <>
             <div className="container">
                 <Banner data={filmInfo} />
-                <Promo />
-                <Seasons />
-                <Info data={filmInfo} />
+                {/* <Promo /> */}
+                {/* <Seasons /> */}
+                {/* <Info data={filmInfo} /> */}
             </div>
             <div className='container-fluid'>
-                <Reviews data={filmInfo[0].review} />
+                {/* <Reviews data={filmInfo[0].review} /> */}
             </div>
         </>
     );
